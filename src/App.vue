@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Group transition</router-link> |
+      <router-link to="/fade">Fade transition</router-link> |
     </div>
-    <router-view/>
+      <router-view/>
   </div>
 </template>
 
@@ -28,5 +28,17 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+/*** TRANSITIONS ***/
+.highlight-enter{
+  background-color: #42b983;
+}
+.highlight-enter-active,
+.highlight-leave-active{
+  transition: all .5s ease-in-out;
+}
+.highlight-leave-to{
+  background-color: #42b983;
 }
 </style>
