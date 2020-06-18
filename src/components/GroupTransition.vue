@@ -14,7 +14,7 @@
 
     <div>
       <transition-group name="slide-up" tag="ul" appear>
-        <li v-for="(fruit,index) in fruits" :key="index">{{fruit}}</li>
+        <li v-for="fruit in fruits" :key="fruit">{{fruit}}</li>
       </transition-group>
     </div>
 
@@ -37,7 +37,7 @@ export default {
   name: 'GroupTransition',
   data() {
     return {
-      fruits : ["pommes","poires","Fraises","Kiwis"],
+      fruits : ["Pommes","Poires","Fraises","Kiwis"],
       newFruit : '',
       showText : false
     }
