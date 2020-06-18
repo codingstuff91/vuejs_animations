@@ -4,7 +4,9 @@
       <router-link to="/">Group transition</router-link> |
       <router-link to="/fade">Fade transition</router-link> |
     </div>
-      <router-view/>
+      <transition name="slide-fade">
+        <router-view/>
+      </transition>
   </div>
 </template>
 
@@ -41,4 +43,14 @@
 .highlight-leave-to{
   background-color: #42b983;
 }
+
+/*** PAGE TRANSITIONS */
+.slide-fade-enter{
+  transform : translateX(70px);
+  opacity: 0;
+}
+.slide-fade-enter-active{
+  transition : all .5s ease-in-out;
+}
+
 </style>
