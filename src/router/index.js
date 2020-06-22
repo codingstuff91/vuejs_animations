@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Fade from '@/components/Fadetransition.vue';
+import Gsap from '@/components/GsapAnimations.vue';
 
 Vue.use(VueRouter)
 
@@ -15,7 +16,12 @@ Vue.use(VueRouter)
     path: '/fade',
     name: 'fade',
     component : Fade
-  }
+  },
+  {
+    path: '/gsap',
+    name: 'gsap',
+    component : Gsap
+  },
 ]
 
 const router = new VueRouter({
