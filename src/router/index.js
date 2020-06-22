@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Fade from '@/components/Fadetransition.vue';
 import Gsap from '@/components/GsapAnimations.vue';
 import Stagger from '@/components/StaggerAnimation.vue';
+import State from '@/components/StateAnimation.vue';
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ Vue.use(VueRouter)
     path: '/stagger',
     name: 'stagger',
     component : Stagger
+  },
+  {
+    path: '/state',
+    name: 'state',
+    component : State
   },
 ]
 

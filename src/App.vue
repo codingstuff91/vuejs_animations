@@ -4,7 +4,8 @@
       <router-link to="/">Group transition</router-link> |
       <router-link to="/fade">Fade transition</router-link> |
       <router-link to="/gsap">GSAP3 animations</router-link> |
-      <router-link to="/stagger">Stagger animations</router-link> 
+      <router-link to="/stagger">Stagger animations</router-link> |
+      <router-link to="/state">State animations</router-link>
     </div>
       <transition name="slide-fade">
         <router-view/>
